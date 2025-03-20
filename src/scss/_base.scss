@@ -11,4 +11,14 @@ a {
 img,
 video {
   display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "the-seasons", sans-serif;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
 }
