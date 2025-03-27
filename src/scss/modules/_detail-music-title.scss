@@ -4,6 +4,8 @@
   flex-direction: column;
   background-image: url("../img/music-logo-titre.png");
   color: white;
+  width: 100vw; /* 100% de la largeur de la fenêtre */
+  height: 100vh; /* 100% de la hauteur de la fenêtre */
 }
 
 .detail-music-title-title {
