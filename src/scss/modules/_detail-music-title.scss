@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-image: url("../img/music-logo-titre.png");
+  color: white;
 }
 
 .detail-music-title-title {
@@ -9,12 +11,14 @@
   font-size: 64px;
   font-weight: 700;
   padding-top: 426.25px;
+  margin-bottom: 16px;
 }
 
 .detail-music-title-domain {
   text-align: center;
   font-size: 24px;
   font-weight: 300;
+  margin-bottom: 4px;
 }
 
 .detail-music-title-date {
