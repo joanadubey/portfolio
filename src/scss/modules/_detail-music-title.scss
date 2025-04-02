@@ -7,10 +7,19 @@
   color: white;
   width: 100vw; /* 100% de la largeur de la fenêtre */
   height: 100vh; /* 100% de la hauteur de la fenêtre */
+  justify-content: flex-end;
+  padding-bottom: 25px;
+  position: relative; /* Permet de positionner les éléments enfants par rapport à ce conteneur */
+}
+
+.detail-music-title-title,
+.detail-music-title-domain,
+.detail-music-title-date {
+  position: relative; /* Permet à ces éléments de se placer au-dessus de l'overlay */
+  z-index: 2; /* Permet d'assurer qu'ils sont au-dessus de l'overlay */
 }
 
 .detail-music-title-text {
-  margin-top: auto;
   margin-bottom: 25px;
 }
 .detail-music-title-title {
