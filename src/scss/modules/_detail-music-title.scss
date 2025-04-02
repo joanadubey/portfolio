@@ -5,10 +5,10 @@
   background-image: url("../img/music-logo-titre.png");
   background-size: cover;
   color: white;
-  width: 100vw; /* 100% de la largeur de la fenêtre */
+
   height: 100vh; /* 100% de la hauteur de la fenêtre */
   justify-content: flex-end;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
   position: relative; /* Permet de positionner les éléments enfants par rapport à ce conteneur */
 }
 

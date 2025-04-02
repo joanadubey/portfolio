@@ -1,5 +1,4 @@
 .next {
-  width: 100vw; /* 100% de la largeur de la fenêtre */
   height: 100vh; /* 100% de la hauteur de la fenêtre */
   background: no-repeat center center fixed;
   background-size: cover;
@@ -12,7 +11,7 @@
   text-align: center;
 }
 
-.overlay {
+.overlay-noir {
   position: absolute;
   top: 0;
   left: 0;
