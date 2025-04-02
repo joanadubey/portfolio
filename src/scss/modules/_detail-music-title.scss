@@ -3,26 +3,29 @@
   justify-content: center;
   flex-direction: column;
   background-image: url("../img/music-logo-titre.png");
+  background-size: cover;
   color: white;
   width: 100vw; /* 100% de la largeur de la fenêtre */
   height: 100vh; /* 100% de la hauteur de la fenêtre */
 }
 
+.detail-music-title-text {
+  margin-top: auto;
+  margin-bottom: 25px;
+}
 .detail-music-title-title {
-  padding-top: 426.25px;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .detail-music-title-domain {
   text-align: center;
   font-size: 24px;
   font-weight: 300;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
 }
 
 .detail-music-title-date {
   text-align: center;
   font-size: 20px;
   font-weight: 300;
-  padding-bottom: 25px;
 }
