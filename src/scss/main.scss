@@ -7,7 +7,11 @@
 @import "modules/detail-music-explications";
 @import "modules/detail-music-logo";
 @import "modules/next";
+@import "modules/projets";
+@import "modules/branches";
 @import "modules/detail-projet-texts";
+@import "modules/a-propos-homepage";
+@import "modules/visuel-homepage";
 
 .row + .row {
   margin-top: 16px;
@@ -19,4 +23,8 @@
   padding-bottom: 12px;
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+:root {
+  --taupe: #c0b8ae;
 }

@@ -1,0 +1,25 @@
+.branches {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover; /* Permet à l'image de s'adapter à l'écran */
+  background-position: center;
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  position: relative; /* Ajouté pour que l'overlay s'aligne correctement */
+}
+
+.overlay-blanc {
+  position: absolute; /* Permet à l'overlay de recouvrir .branches */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Corrigé pour être bien ajusté */
+  background: rgba(255, 255, 255, 0.85); /* Opacité appliquée */
+}
+
+.branches-text {
+  position: relative; /* Assure que le texte passe au-dessus de l'overlay */
+  color: var(--taupe, #c0b8ae);
+  z-index: 1; /* Permet d'afficher le texte au-dessus de l'overlay */
+}

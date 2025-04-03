@@ -15,31 +15,54 @@
         <div class="col-2 offset-10">menu</div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">Joana Dubey</div>
-      </div>
+    <div class="visuel-homepage">
+      <div class="visuel-homepage-bg"></div>
+      <div class="overlay-brun"></div>
+      <h3 class="visuel-homepage-title">Joana Dubey</h3>
+      <p class="visuel-homepage-subtitle">portfolio</p>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">graphic design</div>
-      </div>
+    <extends
+      src="branches.html"
+      locals='{"branche":"Graphic design","img":"img/dentelle-fond.png"}'
+    ></extends>
+    <extends
+      src="branches.html"
+      locals='{"branche":"vidéo","img":"img/dentelle-fond.png"}'
+    ></extends>
+    <extends
+      src="branches.html"
+      locals='{"branche":"user interface","img":"img/dentelle-fond.png"}'
+    ></extends>
+
+    <div class="a-propos-homepage">
+      <h1 class="a-propos-homepage-title">à propos</h1>
+      <p class="a-propos-homepage-text">
+        Étudiante à l’Eikon de Fribourg, je suis en formation pour obtenir un
+        CFC d’Interactive Media Designer. Polyvalente et créative, j’aime
+        explorer différents domaines comme le design graphique, la photographie,
+        la vidéo et l’animation. Je cherche à créer des expériences visuelles
+        qui allient esthétisme et impact, en jouant avec les formes, les
+        textures et les couleurs. Curieuse et toujours en quête de nouvelles
+        idées, j’aime expérimenter et donner vie à des projets qui racontent une
+        histoire.
+      </p>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">vidéo</div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">user interface</div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">à propos</div>
-      </div>
-    </div>
+    <extends
+      src="projets.html"
+      locals='{"title":"Au dela du diagnostic","img":"img/au-dela-du-diagnostic-titre.png","domain":"vidéo"}'
+    ></extends>
+    <extends
+      src="next.html"
+      locals='{"title":"Au dela du diagnostic","img":"img/au-dela-du-diagnostic-titre.png","domain":"vidéo"}'
+    ></extends>
+    <extends
+      src="next.html"
+      locals='{"title":"Au dela du diagnostic","img":"img/au-dela-du-diagnostic-titre.png","domain":"vidéo"}'
+    ></extends>
+    <extends
+      src="next.html"
+      locals='{"title":"Au dela du diagnostic","img":"img/au-dela-du-diagnostic-titre.png","domain":"vidéo"}'
+    ></extends>
 
     <script src="js/main.js" type="module"></script>
   </body>

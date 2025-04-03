@@ -19,7 +19,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   text-transform: uppercase;
   text-align: center;
 }
@@ -31,6 +32,12 @@ h2 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 150px;
   font-weight: 400;
+}
+
+h3 {
+  font-size: 170px;
+  font-weight: 700;
+  color: white;
 }
