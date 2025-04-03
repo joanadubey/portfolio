@@ -10,10 +10,10 @@
   </head>
   <body>
     <a href="music-logo.html">detail</a>
-    <div class="container">
-      <div class="row">
-        <div class="col-2 offset-10">menu</div>
-      </div>
+    <div class="burger-menu">
+      <div class="burger-menu-line"></div>
+      <div class="burger-menu-line"></div>
+      <div class="burger-menu-line"></div>
     </div>
     <div class="visuel-homepage">
       <div class="visuel-homepage-bg"></div>
@@ -47,23 +47,26 @@
         histoire.
       </p>
     </div>
+
+    <extends
+      src="projets.html"
+      locals='{"title":"Music logo","img":"img/music-logo-titre.png","domain":"graphic design"}'
+    ></extends>
+
     <extends
       src="projets.html"
       locals='{"title":"Au dela du diagnostic","img":"img/au-dela-du-diagnostic-titre.png","domain":"vidéo"}'
     ></extends>
+
     <extends
-      src="next.html"
-      locals='{"title":"Au dela du diagnostic","img":"img/au-dela-du-diagnostic-titre.png","domain":"vidéo"}'
-    ></extends>
-    <extends
-      src="next.html"
-      locals='{"title":"Au dela du diagnostic","img":"img/au-dela-du-diagnostic-titre.png","domain":"vidéo"}'
-    ></extends>
-    <extends
-      src="next.html"
-      locals='{"title":"Au dela du diagnostic","img":"img/au-dela-du-diagnostic-titre.png","domain":"vidéo"}'
+      src="projets.html"
+      locals='{"title":"Murmures des vignes","img":"img/murmures-des-vignes-visuel.png","domain":"Graphic Design｜User Interface｜Frontend Development"}'
     ></extends>
 
+    <extends
+      src="projets.html"
+      locals='{"title":"QRace.io","img":"img/QRace-visuel.png","domain":"user interface"}'
+    ></extends>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
