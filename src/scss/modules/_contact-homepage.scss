@@ -1,0 +1,50 @@
+.contact-homepage {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+  background-color: var(--taupe);
+  color: white;
+}
+
+.contact-homepage-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-homepage-info {
+  display: flex;
+  gap: 5px;
+}
+
+.contact-homepage-mail {
+  text-align: center;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+}
+
+.contact-homepage-insta {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+}
+
+.contact-homepage-tel {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.contact-homepage-info-icon {
+  font-size: 36px;
+  line-height: 80px;
+}
+
+.contact-homepage-info-text {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 80px;
+}
