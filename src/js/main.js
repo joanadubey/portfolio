@@ -1,30 +1,30 @@
 import gsap from "gsap";
 
-const cursor = document.querySelector(".custom-cursor");
-let mouseX = 0,
-  mouseY = 0;
-let currentX = 0,
-  currentY = 0;
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
-function animateCursor() {
-  currentX += (mouseX - currentX) * 0.03;
-  currentY += (mouseY - currentY) * 0.03;
-  cursor.style.transform = `translate(${currentX - 60}px, ${currentY - 60}px)`;
-  requestAnimationFrame(animateCursor);
-}
-animateCursor();
-
-document.addEventListener("mousemove", (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
+gsap.to(".visuel-homepage", {
+  scrollTrigger: {
+    pin: ".visuel-homepage",
+    trigger: ".visuel-homepage",
+    start: "top",
+    end: "bottom",
+    pinSpacing: false,
+    markers: true,
+  },
 });
+var branches = document.querySelectorAll(".branches");
 
-const projets = document.querySelectorAll(".projets");
-projets.forEach((projet) => {
-  projet.addEventListener("mouseenter", () => {
-    cursor.style.opacity = 1;
-  });
-  projet.addEventListener("mouseleave", () => {
-    cursor.style.opacity = 0;
+branches.forEach((branche) => {
+  gsap.to(branche, {
+    scrollTrigger: {
+      trigger: branche,
+      start: "bottom bottom",
+      scrub: 1,
+      markers: true,
+    },
+    x: 400,
+    rotation: 90,
+    duration: 5,
   });
 });
