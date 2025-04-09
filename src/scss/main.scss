@@ -1,7 +1,6 @@
 @import "font";
 @import "base";
 @import "layout";
-@import "modules/example";
 @import "bootstrap/scss/bootstrap-grid";
 @import "modules/detail-music-title";
 @import "modules/detail-music-explications";
@@ -14,6 +13,8 @@
 @import "modules/visuel-homepage";
 @import "modules/burger-menu";
 @import "modules/contact-homepage";
+@import "modules/intro-projets";
+@import "modules/custom-cursor";
 
 .row + .row {
   margin-top: 16px;

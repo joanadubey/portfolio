@@ -7,6 +7,8 @@
   background-position: center;
   background-repeat: no-repeat; /* Empêche la répétition de l'image */
   position: relative; /* Ajouté pour que l'overlay s'aligne correctement */
+  background-attachment: fixed; /* <-- FOND FIXE */
+  overflow: hidden;
 }
 
 .overlay-blanc {

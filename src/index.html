@@ -2,14 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
+    <title>Joana Dubey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
     <link rel="stylesheet" href="https://use.typekit.net/fzp3odn.css" />
     <link rel="stylesheet" href="https://use.typekit.net/fzp3odn.css" />
   </head>
   <body>
-    <a href="music-logo.html">detail</a>
     <div class="burger-menu">
       <div class="burger-menu-line"></div>
       <div class="burger-menu-line"></div>
@@ -47,15 +46,16 @@
         histoire.
       </p>
     </div>
+    <a href="music-logo.html">
+      <extends
+        src="projets.html"
+        locals='{"title":"Music logo","img":"img/music-logo-titre.png","domain":"graphic design"}'
+      ></extends
+    ></a>
 
     <extends
       src="projets.html"
-      locals='{"title":"Music logo","img":"img/music-logo-titre.png","domain":"graphic design"}'
-    ></extends>
-
-    <extends
-      src="projets.html"
-      locals='{"title":"Au dela du diagnostic","img":"img/au-dela-du-diagnostic-titre.png","domain":"vidéo"}'
+      locals='{"title":"Au dela du diagnostic","img":"img/au-dela-du-diagnostic-titre.png","domain":"Vidéo"}'
     ></extends>
 
     <extends
@@ -65,7 +65,7 @@
 
     <extends
       src="projets.html"
-      locals='{"title":"QRace.io","img":"img/QRace-visuel.png","domain":"user interface"}'
+      locals='{"title":"QRace.io","img":"img/QRace-visuel.png","domain":"User Interface"}'
     ></extends>
 
     <div class="contact-homepage">
@@ -92,6 +92,42 @@
       </div>
     </div>
 
+    <div class="custom-cursor">
+      <span>voir plus</span>
+    </div>
+    <script>
+      const cursor = document.querySelector(".custom-cursor");
+      let mouseX = 0,
+        mouseY = 0;
+      let currentX = 0,
+        currentY = 0;
+
+      function animateCursor() {
+        currentX += (mouseX - currentX) * 0.15;
+        currentY += (mouseY - currentY) * 0.15;
+        cursor.style.transform = `translate(${currentX - 60}px, ${
+          currentY - 60
+        }px)`;
+        requestAnimationFrame(animateCursor);
+      }
+      animateCursor();
+
+      document.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      const projets = document.querySelectorAll(".projets");
+      projets.forEach((projet) => {
+        projet.addEventListener("mouseenter", () => {
+          cursor.style.opacity = 1;
+        });
+        projet.addEventListener("mouseleave", () => {
+          cursor.style.opacity = 0;
+        });
+      });
+    </script>
+    <script type="module" src="./js/main.js"></script>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
