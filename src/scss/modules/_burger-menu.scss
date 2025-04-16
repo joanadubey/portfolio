@@ -1,16 +1,22 @@
 .burger-menu {
-  position: absolute;
-  top: 70px; /* Ajuste la valeur selon tes besoins */
-  right: 50px; /* Ajuste la valeur selon tes besoins */
+  position: fixed;
+  top: 50px;
+  right: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 14px;
-  z-index: 3; /* S'assure qu'il est au-dessus des autres éléments */
+  z-index: 9999; /* S'assure qu'il est au-dessus des autres éléments */
 }
 
 .burger-menu-line {
   height: 1.5px;
   width: 200px;
   background-color: white;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.burger-menu:hover .burger-menu-line {
+  transform: scaleX(0.8);
 }
