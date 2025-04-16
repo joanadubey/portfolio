@@ -10,7 +10,7 @@ gsap.to(".visuel-homepage", {
     start: "top",
     end: "bottom",
     pinSpacing: false,
-    markers: true,
+    // markers: true,
   },
 });
 
@@ -24,8 +24,35 @@ branches.forEach((branche) => {
       start: "top",
       end: "bottom",
       pinSpacing: false,
+      // markers: true,
+    },
+  });
+});
+
+var texts = document.querySelectorAll(".branches-text");
+
+texts.forEach((text, index) => {
+  gsap.to(text, {
+    scrollTrigger: {
+      trigger: ".branches",
+      start: "top top+=" + (2 - index) * 200 + "px",
+      // markers: true,
+    },
+    color: "blue",
+    duration: 0.5,
+  });
+});
+
+texts.forEach((text, index) => {
+  console.log("bottom top+=" + ((2 - index) * 200 - 200) + "px");
+  gsap.to(text, {
+    scrollTrigger: {
+      trigger: ".branches",
+      start: "top top+=" + ((2 - index) * 200 - 200) + "px",
       markers: true,
     },
+    color: "red",
+    duration: 3,
   });
 });
 
@@ -35,11 +62,11 @@ projects.forEach((project) => {
   gsap.to(project, {
     scrollTrigger: {
       pin: project,
-      trigger: project,
+      trigger: "project",
       start: "top",
       end: "bottom",
       pinSpacing: false,
-      markers: true,
+      // markers: true,
     },
   });
 });
