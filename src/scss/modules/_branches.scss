@@ -24,4 +24,5 @@
   position: absolute; /* Assure que le texte passe au-dessus de l'overlay */
   color: var(--taupe, #c0b8ae);
   z-index: 1; /* Permet d'afficher le texte au-dessus de l'overlay */
+  opacity: 0;
 }

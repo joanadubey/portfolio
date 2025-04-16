@@ -22,7 +22,7 @@ branches.forEach((branche) => {
       pin: branche,
       trigger: branche,
       start: "top",
-      end: "bottom",
+      end: "+=1000",
       pinSpacing: false,
       // markers: true,
     },
@@ -35,23 +35,24 @@ texts.forEach((text, index) => {
   gsap.to(text, {
     scrollTrigger: {
       trigger: ".branches",
-      start: "top top+=" + (2 - index) * 200 + "px",
+      start: "top top+=" + (2 - index) * 100 + "px",
+
       // markers: true,
     },
-    color: "blue",
-    duration: 0.5,
+    opacity: 1,
+    duration: 3,
   });
 });
 
 texts.forEach((text, index) => {
-  console.log("bottom top+=" + ((2 - index) * 200 - 200) + "px");
   gsap.to(text, {
     scrollTrigger: {
       trigger: ".branches",
       start: "top top+=" + ((2 - index) * 200 - 200) + "px",
+
       markers: true,
     },
-    color: "red",
+    opacity: 0,
     duration: 3,
   });
 });
@@ -62,7 +63,7 @@ projects.forEach((project) => {
   gsap.to(project, {
     scrollTrigger: {
       pin: project,
-      trigger: "project",
+      trigger: project,
       start: "top",
       end: "bottom",
       pinSpacing: false,
@@ -71,26 +72,26 @@ projects.forEach((project) => {
   });
 });
 
-// gsap.to(".projets", {
-//   scrollTrigger: {
-//     pin: ".projets",
-//     trigger: ".projets",
-//     start: "top",
-//     end: "bottom",
-//     pinSpacing: false,
-//     markers: true,
-//   },
-// });
-// var branches = document.querySelectorAll(".projets");
+var aProposSection = document.querySelector(".a-propos-homepage");
+var contactSection = document.querySelector(".contact-homepage");
 
-// branches.forEach((branche) => {
-//   gsap.to(branche, {
-//     scrollTrigger: {
-//       trigger: branche,
-//       start: "bottom bottom",
-//       scrub: 1,
-//       markers: true,
-//     },
-//     duration: 5,
-//   });
-// });
+gsap.to(aProposSection, {
+  scrollTrigger: {
+    pin: aProposSection,
+    trigger: aProposSection,
+    start: "top+=200px top",
+    end: "bottom top",
+    pinSpacing: false,
+  },
+  delay: 100,
+});
+
+gsap.to(contactSection, {
+  scrollTrigger: {
+    pin: contactSection,
+    trigger: contactSection,
+    start: "top top",
+    end: "bottom top",
+    pinSpacing: false,
+  },
+});
