@@ -9,11 +9,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  max-width: 65%;
+  width: 65%;
 }
 
 .detail-music-images-image1 img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -29,6 +29,6 @@
 }
 
 .detail-music-images-image2 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
