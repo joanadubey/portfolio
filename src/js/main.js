@@ -127,3 +127,18 @@ gsap.to(contactSection, {
     // markers: true,
   },
 });
+
+module.exports = {
+  plugins: {
+    "posthtml-extend": {
+      root: "./src",
+    },
+    "posthtml-expressions": {
+      locals: {
+        img: "/images/projet.jpg",
+        title: "Mon projet",
+        domain: "Design & Développement",
+      },
+    },
+  },
+};
