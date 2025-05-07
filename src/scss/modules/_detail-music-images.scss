@@ -1,0 +1,51 @@
+// .detail-music-images {
+//   height: 100vh;
+// }
+
+// .detail-music-images-image2 {
+//   transform: translateY(-30vh);
+// }
+
+// .detail-music-images-image1 img {
+//   max-width: 70%;
+//   align-items: baseline;
+// }
+
+// .detail-music-images-image2 img {
+//   max-width: 45%;
+// }
+
+.detail-music-images {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.detail-music-images-image1 {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 65%;
+}
+
+.detail-music-images-image1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.detail-music-images-image2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-5vh);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-width: 45%;
+}
+
+.detail-music-images-image2 img {
+  max-width: 100%;
+  height: auto;
+}

@@ -7,17 +7,17 @@
   background-position: center;
   color: white;
 
-  height: 100vh; /* 100% de la hauteur de la fenêtre */
+  height: 100vh;
   justify-content: flex-end;
   padding-bottom: 50px;
-  position: relative; /* Permet de positionner les éléments enfants par rapport à ce conteneur */
+  position: relative;
 }
 
 .detail-music-title-title,
 .detail-music-title-domain,
 .detail-music-title-date {
-  position: relative; /* Permet à ces éléments de se placer au-dessus de l'overlay */
-  z-index: 2; /* Permet d'assurer qu'ils sont au-dessus de l'overlay */
+  position: relative;
+  z-index: 5;
 }
 
 .detail-music-title-text {

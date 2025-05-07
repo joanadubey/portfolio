@@ -14,19 +14,17 @@ gsap.to(".visuel-homepage", {
   },
 });
 
-var branches = document.querySelectorAll(".branches");
+var branches = document.querySelector(".branches");
 
-branches.forEach((branche) => {
-  gsap.to(branche, {
-    scrollTrigger: {
-      pin: branche,
-      trigger: branche,
-      start: "top",
-      end: "+=1000",
-      pinSpacing: false,
-      // markers: true,
-    },
-  });
+gsap.to(branches, {
+  scrollTrigger: {
+    pin: branches,
+    trigger: branches,
+    start: "top",
+    end: "+=100000",
+    pinSpacing: false,
+    // markers: true,
+  },
 });
 
 var texts = document.querySelectorAll(".branches-text");
@@ -34,28 +32,61 @@ var texts = document.querySelectorAll(".branches-text");
 texts.forEach((text, index) => {
   gsap.to(text, {
     scrollTrigger: {
-      trigger: ".branches",
-      start: "top top+=" + (2 - index) * 100 + "px",
-
+      trigger: "body",
+      start:
+        window.innerHeight * 1.5 +
+        "px top+=" +
+        (2 - index) * window.innerHeight * 0.5 +
+        "px",
+      end: "bottom top+=1000",
       // markers: true,
     },
     opacity: 1,
     duration: 3,
   });
+  if (index !== 2) {
+    gsap.to(text, {
+      scrollTrigger: {
+        trigger: "body",
+        start:
+          window.innerHeight * 2 +
+          "px top+=" +
+          (2 - index) * window.innerHeight * 0.5 +
+          "px",
+        end: "bottom top+=1000",
+        // markers: true,
+      },
+      opacity: 0,
+      duration: 3,
+    });
+  }
 });
 
-texts.forEach((text, index) => {
-  gsap.to(text, {
-    scrollTrigger: {
-      trigger: ".branches",
-      start: "top top+=" + ((2 - index) * 200 - 200) + "px",
+// texts.forEach((text, index) => {
+//   gsap.to(text, {
+//     scrollTrigger: {
+//       trigger: ".branches",
+//       start: "200px top+=" + ((2 - index) * 100 + 2) + "px",
+//       end: "bottom top+=1000",
+//       markers: true,
+//     },
+//     opacity: 1,
+//     duration: 3,
+//   });
+// });
 
-      markers: true,
-    },
-    opacity: 0,
-    duration: 3,
-  });
-});
+// texts.forEach((text, index) => {
+//   gsap.to(text, {
+//     scrollTrigger: {
+//       trigger: ".branches",
+//       start: "top top+=" + ((2 - index) * 200 - 200) + "px",
+
+//       markers: true,
+//     },
+//     opacity: 0,
+//     duration: 3,
+//   });
+// });
 
 var projects = document.querySelectorAll(".projets");
 

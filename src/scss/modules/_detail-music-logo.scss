@@ -9,3 +9,27 @@ detail-music-logo-image {
     object-fit: cover;
   }
 }
+
+.detail-music-logo {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.detail-music-logo .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.detail-music-logo .col-6,
+.detail-music-logo .col-5 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.detail-music-logo .col-6,
+.detail-music-logo .col-5 {
+  justify-content: center;
+}

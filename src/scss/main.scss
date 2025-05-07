@@ -9,24 +9,14 @@
 @import "modules/projets";
 @import "modules/branches";
 @import "modules/detail-projet-texts";
+@import "modules/detail-music-images";
+@import "modules/detail-music-poster";
 @import "modules/a-propos-homepage";
 @import "modules/visuel-homepage";
 @import "modules/burger-menu";
 @import "modules/contact-homepage";
 @import "modules/intro-projets";
 @import "modules/custom-cursor";
-
-.row + .row {
-  margin-top: 16px;
-}
-
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
 
 :root {
   --taupe: #c0b8ae;

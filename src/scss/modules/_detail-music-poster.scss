@@ -1,0 +1,20 @@
+.detail-music-poster .detail-projet-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.detail-music-poster-image {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.detail-music-poster-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

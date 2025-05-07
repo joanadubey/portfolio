@@ -27,7 +27,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 5;
 }
 
 .next-text {
@@ -35,7 +35,7 @@
   top: calc(43% - 85px - 36px);
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2;
+  z-index: 5;
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
@@ -46,7 +46,7 @@
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2;
+  z-index: 5;
   font-size: 24px;
   font-weight: 300;
 }
