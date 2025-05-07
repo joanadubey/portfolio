@@ -127,3 +127,11 @@ gsap.to(contactSection, {
     // markers: true,
   },
 });
+
+module.exports = {
+  plugins: {
+    "posthtml-extend": {
+      root: "./src", // ou le dossier de tes templates
+    },
+  },
+};
