@@ -21,8 +21,13 @@
   mix-blend-mode: hard-light;
 }
 
-/* Apparition au hover */
 .projets:hover ~ .custom-cursor,
 .projets:hover .custom-cursor {
+  opacity: 1;
+}
+
+.next:hover .custom-cursor,
+.next:hover + .custom-cursor,
+.next:hover ~ .custom-cursor {
   opacity: 1;
 }

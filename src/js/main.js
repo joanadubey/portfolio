@@ -77,21 +77,22 @@ var contactSection = document.querySelector(".contact-homepage");
 
 gsap.to(aProposSection, {
   scrollTrigger: {
-    pin: aProposSection,
+    pin: true,
     trigger: aProposSection,
-    start: "top+=200px top",
-    end: "bottom top",
+    start: "top top",
+    end: "+=100%",
     pinSpacing: false,
+    // markers: true,
   },
-  delay: 100,
 });
 
 gsap.to(contactSection, {
   scrollTrigger: {
-    pin: contactSection,
+    pin: true,
     trigger: contactSection,
     start: "top top",
-    end: "bottom top",
-    pinSpacing: false,
+    end: "+=100%", // ou "bottom bottom"
+    pinSpacing: true,
+    // markers: true,
   },
 });

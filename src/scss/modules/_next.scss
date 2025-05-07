@@ -1,5 +1,5 @@
 .next {
-  height: 100vh; /* 100% de la hauteur de la fenêtre */
+  height: 100vh;
   background: no-repeat center center fixed;
   background-size: cover;
   color: white;
@@ -7,8 +7,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative; /* Permet de positionner l'overlay */
+  position: relative;
   text-align: center;
+  pointer-events: auto;
+  z-index: 1;
 }
 
 .overlay-noir {
@@ -17,7 +19,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Overlay noir avec 40% d'opacité */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .next-title {
@@ -30,11 +32,11 @@
 
 .next-text {
   position: absolute;
-  top: calc(43% - 70px - 36px); /* Ajuste en fonction du titre */
+  top: calc(43% - 85px - 36px);
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
 }

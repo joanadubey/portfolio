@@ -26,3 +26,13 @@ projets.forEach((projet) => {
     cursor.style.opacity = 0;
   });
 });
+
+const nextElements = document.querySelectorAll(".next");
+nextElements.forEach((nextEl) => {
+  nextEl.addEventListener("mouseenter", () => {
+    cursor.style.opacity = 1;
+  });
+  nextEl.addEventListener("mouseleave", () => {
+    cursor.style.opacity = 0;
+  });
+});

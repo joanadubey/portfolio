@@ -15,6 +15,17 @@
       <div class="burger-menu-line"></div>
     </div>
 
+    <div class="burger-menu-content">
+      <div class="burger-menu-content-white-bg"></div>
+      <div class="burger-menu-content-bg"></div>
+      <div class="overlay-noir"></div>
+      <ul>
+        <li><a href="#bg-1">À propos</a></li>
+        <li><a href="#bg-2">Projets</a></li>
+        <li><a href="#bg-3">Contact</a></li>
+      </ul>
+    </div>
+
     <div class="visuel-homepage">
       <div class="visuel-homepage-bg"></div>
       <div class="overlay-brun"></div>
@@ -28,20 +39,7 @@
       <h1 class="branches-text">user interface</h1>
     </div>
 
-    <!-- <extends
-      src="branches.html"
-      locals='{"branche":"Graphic design","img":"img/dentelle-fond.png"}'
-    ></extends>
-    <extends
-      src="branches.html"
-      locals='{"branche":"vidéo","img":"img/dentelle-fond.png"}'
-    ></extends>
-    <extends
-      src="branches.html"
-      locals='{"branche":"user interface","img":"img/dentelle-fond.png"}'
-    ></extends> -->
-
-    <div class="a-propos-homepage">
+    <div id="bg-1" class="a-propos-homepage">
       <h1 class="a-propos-homepage-title">à propos</h1>
       <p class="a-propos-homepage-text">
         Étudiante à l’Eikon de Fribourg, je suis en formation pour obtenir un
@@ -54,7 +52,7 @@
         histoire.
       </p>
     </div>
-    <a href="music-logo.html">
+    <a id="bg-2" href="music-logo.html">
       <extends
         src="projets.html"
         locals='{"title":"Music logo","img":"img/music-logo-titre.png","domain":"graphic design"}'
@@ -76,7 +74,7 @@
       locals='{"title":"QRace.io","img":"img/QRace-visuel.png","domain":"User Interface"}'
     ></extends>
 
-    <div class="contact-homepage">
+    <div id="bg-3" class="contact-homepage">
       <h1 class="contact-homepage-title">contact</h1>
       <div class="contact-homepage-infos">
         <a href="mailto:joana.dubey@bluewin.ch" class="contact-homepage-info">
@@ -141,6 +139,7 @@
       });
     </script>
     <script type="module" src="./js/_custom-cursor.js"></script>
+    <script type="module" src="./js/_burger-menu.js"></script>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
